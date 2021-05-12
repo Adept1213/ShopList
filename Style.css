@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0% auto;
+    max-width: 800px;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header */
+header {
+    height: 50px;
+    background-color: cadetblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* main */
+main {
+    font-size: 20px;
+}
+
+.bottomButtons {/*button*/   
+    width: 100%;
+    height: 50px;
+    border: none;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    position: absolute;
+    bottom: 0%;
+}
+
+.addNewProduct {  /*button*/
+    background-color: cadetblue;
+    border: none;
+    width: 100%;
+}
+.buttonChange{   /*button*/
+    background-color:  rgb(224, 220, 203);
+    border: none;
+    width: 100%;
+}
+.buttonDone { /* button */
+    background-color:  rgb(202, 173, 55);
+    border: none;
+    width: 100%;
+}
+   
+table { width: 100%;}
+
+tr {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+input {
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;  
+    font-size: 20px;
+}
+
+
+.nav {
+    height: 40px;
+    background-color: rgb(224, 220, 203);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.name {color: black}
+.count {color: grey}
+.price {color: green}
+.totalCost {color: blue}
