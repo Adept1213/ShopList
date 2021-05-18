@@ -59,6 +59,10 @@ tr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.crossOut{
+    background-color: rgb(160, 157, 157);
+}
+
 
 input {
     width: 100%;
