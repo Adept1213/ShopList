@@ -11,10 +11,47 @@ body {
 /* Header */
 header {
     height: 50px;
-    background-color: cadetblue;
+    background-color: rgb(115, 240, 245);
     font-size: 30px;
     text-align: center;
+    line-height: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
+
+.header__totalCost {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    font-size: 25px;
+}
+
+
+.header__totalCost__cost {
+    vertical-align: top;
+    color:green;
+    
+    line-height: 20px;
+}
+
+.header__totalCost__cost:after {
+    height: 60px;
+    width:2px ;
+    background-color:black;
+    content:'';
+    position: absolute;
+    top: -7px;
+    transform: rotate(45deg);
+}
+
+.header__totalCost__price {
+    vertical-align: bottom;
+    color:blue;
+
+    line-height: 70px;
+}
+
 
 /* main */
 main {
@@ -56,11 +93,16 @@ tr {
     width: 100%;
     border-bottom: 1px solid black;
 
+    line-height: 35px;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .crossOut{
     background-color: rgb(160, 157, 157);
+}
+.crossOut input{
+    background-color: rgb(212, 211, 211);
 }
 
 
@@ -76,6 +118,8 @@ input {
 .nav {
     height: 40px;
     background-color: rgb(224, 220, 203);
+
+    line-height: 35px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
