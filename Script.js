@@ -42,6 +42,9 @@ function creatInput(id, className, productStateValue) {
     creatInput.classList.add(className);
     creatInput.setAttribute('value', productStateValue);
     creatInput.setAttribute('placeHolder', className);
+    creatInput.setAttribute('maxLength', 8);
+    if (className != 'name')creatInput.setAttribute('type', 'number');
+    creatInput.setAttribute('min', 0) 
     return creatInput;
 }
 
